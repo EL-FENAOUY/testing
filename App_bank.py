@@ -2,21 +2,7 @@
 # Chargement des librairies
 # ====================================================================
 import streamlit as st
-from PIL import Image
-
-# ====================================================================
-# IMAGES
-# ====================================================================
-# Logo de l'entreprise                  
-logo =  Image.open("./Logo.png")
-
-
-# --------------------------------------------------------------------
-# LOGO
-# --------------------------------------------------------------------
-# Chargement du logo de l'entreprise
-st.sidebar.image(logo, width=240, caption=" Dashboard - Aide à la décision",
-                 use_column_width='always')                             
+                          
 
 # ====================================================================
 # HEADER - TITRE
