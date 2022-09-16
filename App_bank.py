@@ -37,5 +37,30 @@ sidebar_selection = st.sidebar.radio(
     ['Overview' ,'Data Analysis', 'Model & Prediction','Prédire solvabilité client','Intéprétabilité'],
 )
 
+
+
+
+
+
+
+# ====================================================================
+# FOOTER
+# ====================================================================
+html_line="""
+<br>
+<br>
+<br>
+<br>
+<hr style= "  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1.5px;">
+<p style="color:Gray; text-align: right; font-size:12px;">Auteur : elfenaouyreda@gmail.com - 24/08/2022</p>
+"""
+st.markdown(html_line, unsafe_allow_html=True)
+
                           
   
