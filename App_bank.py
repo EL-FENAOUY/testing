@@ -2,7 +2,7 @@
 # Chargement des librairies
 # ====================================================================
 import streamlit as st
-                 
+from PIL import Image               
 logo =  Image.open("./Logo.png")
 
 st.sidebar.image(logo, width=240, caption=" Dashboard - Aide à la décision",
