@@ -8,7 +8,7 @@ from PIL import Image
 # IMAGES
 # ====================================================================
 # Logo de l'entreprise                  
-logo =  Image.open("C:/Users/lenovo/Soutenance/Logo.png")
+logo =  Image.open("./Logo.png")
 
 
 # --------------------------------------------------------------------
