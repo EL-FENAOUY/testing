@@ -8,8 +8,6 @@ logo =  Image.open("./Logo.png")
 st.sidebar.image(logo, width=240, caption=" Dashboard - Aide à la décision",
                  use_column_width='always')
 
-number = st.slider("Pick a number",0,100)
-
 html_header="""
     <head>
         <title>Application Dashboard Crédit Score</title>
