@@ -513,15 +513,12 @@ if selected_item == 'predire_client':
 
 if selected_item == 'Fluance':
     affiche_facteurs_influence()
- 
+        
+    
 
-
-
-
-
-
-
-
+# ====================================================================
+# FOOTER
+# ====================================================================
 html_line="""
 <br>
 <br>
@@ -537,6 +534,3 @@ html_line="""
 <p style="color:Gray; text-align: right; font-size:12px;">Auteur : elfenaouyreda@gmail.com - 24/08/2022</p>
 """
 st.markdown(html_line, unsafe_allow_html=True)
-
-                          
-  
