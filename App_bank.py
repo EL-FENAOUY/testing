@@ -4,6 +4,7 @@
 import streamlit as st
 import pickle
 import time
+import lightgbm
 from PIL import Image  
 import pandas as pd
 from data_api import *
