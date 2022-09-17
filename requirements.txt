@@ -4,4 +4,4 @@ streamlit
 lightgbm
 plotly==5.1.0
 matplotlib==3.4.2
-
+shap
