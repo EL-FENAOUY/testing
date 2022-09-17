@@ -5,6 +5,12 @@ import streamlit as st
 import pickle
 import time
 import lightgbm
+import plotly.graph_objects as go
+from urllib.request import urlopen
+import plotly.express as px
+import plotly.figure_factory as ff
+from matplotlib.figure import Figure
+import streamlit.components.v1 as components
 from PIL import Image  
 import pandas as pd
 from data_api import *
