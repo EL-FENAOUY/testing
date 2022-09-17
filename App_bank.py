@@ -4,12 +4,22 @@
 import streamlit as st
 import pickle
 import time
-from PIL import Image        
+from PIL import Image  
+import pandas as pd
+from data_api import *
 
 filename = './modelisation/classifier_lgbm_model.sav'
 with open(filename, 'rb') as lgbm_model:
     best_model = pickle.load(lgbm_model)
-    
+
+sample_size = 20000
+data ,train_set,y_pred_test_export = load_all_data(sample_size)
+test_set = pd.read_csv('data/test_set_echantillon.csv')
+
+
+
+def show_data ():
+    st.write(data.head(10))    
     
     
 logo =  Image.open("./Logo.png")
