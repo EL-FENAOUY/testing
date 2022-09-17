@@ -1,7 +1,7 @@
 protobuf==3.20.1
 Pillow==8.3.1
 streamlit
-time 
+time==16.3.1
 lightgbm
 pandas 
 numpy
