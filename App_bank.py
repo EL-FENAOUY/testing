@@ -14,6 +14,7 @@ import streamlit.components.v1 as components
 from PIL import Image  
 import pandas as pd
 from data_api import *
+import shap
 
 filename = './modelisation/classifier_lgbm_model.sav'
 with open(filename, 'rb') as lgbm_model:
