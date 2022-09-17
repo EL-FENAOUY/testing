@@ -185,7 +185,7 @@ def show_client_predection():
         
         #st.header('ID :'+str(client['SK_ID_CURR'][0]))
         #st.write(data['age_bins'].value_counts())
-        API_url = "http://127.0.0.1:80/credit/" + str(client_id)
+        API_url = "https://banking2023.herokuapp.com/credit/" + str(client_id)
         with st.spinner('Chargement du score du client...'):
             json_url = urlopen(API_url)
             API_data = json.loads(json_url.read())
@@ -311,7 +311,7 @@ def show_client_prediction():
     if selected_choice == 'Client existant dans le dataset':
         client_id = st.number_input("Donnez Id du Client",100002)
         if st.button('Prédire Client'):
-            API_url = "http://127.0.0.1:80/credit/" + str(client_id)
+            API_url = "https://banking2023.herokuapp.com/credit/" + str(client_id)
             with st.spinner('Chargement du score du client...'):
                 json_url = urlopen(API_url)
                 API_data = json.loads(json_url.read())
