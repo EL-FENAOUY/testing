@@ -2,7 +2,13 @@
 # Chargement des librairies
 # ====================================================================
 import streamlit as st
-from PIL import Image               
+import pickle
+import time
+from PIL import Image        
+
+filename = './modelisation/classifier_lgbm_model.sav'
+with open(filename, 'rb') as lgbm_model:
+    best_model = pickle.load(lgbm_model)
 logo =  Image.open("./Logo.png")
 
 st.sidebar.image(logo, width=240, caption=" Dashboard - Aide à la décision",
