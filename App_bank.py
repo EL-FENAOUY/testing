@@ -20,6 +20,12 @@ filename = './modelisation/classifier_lgbm_model.sav'
 with open(filename, 'rb') as lgbm_model:
     best_model = pickle.load(lgbm_model)
 
+# Chargement de agg_pay_num
+filename = './shap/shap_values.pickle'
+with open(filename, 'rb') as shap_file:
+    shap_values = pickle.load(shap_file)
+
+
 sample_size = 20000
 data ,train_set,y_pred_test_export = load_all_data(sample_size)
 test_set = pd.read_csv('data/test_set_echantillon.csv')
