@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 import time
 import json
 import lightgbm
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_curve
+from sklearn.metrics import auc
 import plotly.graph_objects as go
 from urllib.request import urlopen
 import plotly.express as px
