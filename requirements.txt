@@ -1,7 +1,8 @@
 protobuf==3.20.1
 Pillow==8.3.1
 streamlit
+shap==0.41.0
 lightgbm
 plotly==5.1.0
 matplotlib==3.4.2
-shap
+
