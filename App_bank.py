@@ -151,7 +151,7 @@ def income_type ():
 
 def filter_distribution():
     st.subheader("Filtre des Distribution")
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     is_age_selected = col1.radio("Distribution Age ",('non','oui'))
     is_incomdis_selected = col2.radio('Distribution Revenus ',('non','oui'))
 
